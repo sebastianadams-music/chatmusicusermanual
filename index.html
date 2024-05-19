@@ -7,6 +7,26 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1>ChatMusic User Manual</h1>
+    <h1>Installation Instructions</h1>
+    <ul>Install Max MSP from cycling74.com</ul>
+    <ul>The current version of the patch was created on Max 8.2 running on MacOS Ventura (13.0)</ul>
+    <ul>The patch will most likely work on other systems</ul>
+    <ul>You can run Max patches forever with a trial version of Max, but you cannot save changes. The patch is set up so that changes can be saved to external text files, so the patch should work properly with the free version of Max.</ul>
+    <ul>Make a folder in your computer called "ChatMusic".</ul><ul>Open Max and navigate to Options > File Preferences</ul><ul>Click the "+" option in the bottom left corner of the File Preferences window to add a path to the file paths of your Max installation.</ul>
+    <ul>Clcik the "choose" button that appears.</ul>
+    <ul>In the menu that appears, navigate to the ChatMusic folder you already created, and press Open.</ul>
+    <ul>Ensure that the "include subfolders" box is checked.</ul>
+    <ul>Now close Max 8.</ul>
+    <ul>Copy the latest version of ChatMusic (which should have a name like ChatMusic_0.2), and the latest version of the externals folder, into the ChatMusic folder.</ul>
+    <ul>If there is an existing version of ChatMusic, you should move it out of the ChatMusic folder if you wish to keep a copy.</ul><ul>Launch the program by opening "ChatMusic.maxpat" inside the latest version folder. Ensure it opens in Max 8, and not any other version of Max (or a standalone software made in Max which may already be installed on your computer, by rightclicking the file and clicking "Open with", then choosing Max 8)</ul>
+    <h1>Setting up the patch</h1>
+    <ul>You should always start by pressing the init button</ul>
+    <ul>if something goes wrong and you need to reset settings, you should first try pressing "lb" and then if that doesn't fix things, try "init" again. If this doesn't work, ensure any custom settings are saved, close the patch, re-open, and make sure to press "init"</ul>
+
+
+
+
     <h1>FAQ</h1>
     <details>
         <summary>How does the color coding of patch cords work?</summary><p>The patch cords are colored to give an indication of the type of information that is carried in them, which can speed up debugging or understanding the logic of the patch.
@@ -69,6 +89,9 @@
         <summary>Title</summary>
         <p>Text</p>
     </details> -->
+<h1>PATCH MAP</h1>
+<h2>Techniques</h2><p>Located inside score.innards; takes in a phrase of ASCII to trigger a technique. Normally the chosen value is decided by a math operation on the input phrase.</p>
+
     <h1>CHAT COMMANDS</h1>
     <h2>VIDEO</h2>
     <p>Video is a special case right now where there is complex subrouting... I need to understand better myself before I can document it. </p>
